@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Simple Marquee Example</title>
+	<link rel="stylesheet" href="css/marquee.css" />
+	<link rel="stylesheet" href="css/example.css" />
+</head>
+
+<body>
+	<h1>Simple Marquee</h1>
+	<div class="content">
+		<div class="simple-marquee-container">
+			<div class="marquee">
+				<ul class="marquee-content-items">
+					<li>أسهم التعدين تعزز المكاسب فى أوروبا بفضل تفاؤل حيال التعافى</li>
+					<li>1.19 مليار جنيه أرباح أبوظبي الإسلامي في 2020</li>
+					<li>النفط يبلغ ذروة 13 شهرا بفعل مخاوف من توتر فى الشرق الأوسط</li>
+					<li>أسعار العملات اليوم الاثنين 15-2-2021 أمام الجنيه المصرى</li>
+					<li>مصر تطرح أذون خزانة بقيمة 22 مليار جنيه.. اليوم</li>
+					<li>انجلترا تطرح أذون خزانة بقيمة 23 مليار جنيه.. اليوم</li>
+					<li>ايطاليا تطرح أذون خزانة بقيمة 24 مليار جنيه.. اليوم</li>
+					<li>اسبانيا تطرح أذون خزانة بقيمة 25 مليار جنيه.. اليوم</li>
+					<li>اسرائيل تطرح أذون خزانة بقيمة 26 مليار جنيه.. اليوم</li>
+					<li>المغرب تطرح أذون خزانة بقيمة 27 مليار جنيه.. اليوم</li>
+					<li>تونس تطرح أذون خزانة بقيمة 28 مليار جنيه.. اليوم</li>
+					<li>الجزائر تطرح أذون خزانة بقيمة 29 مليار جنيه.. اليوم</li>
+					<li>موريتانيا تطرح أذون خزانة بقيمة 30 مليار جنيه.. اليوم</li>
+					<li>جيبوتي تطرح أذون خزانة بقيمة 31 مليار جنيه.. اليوم</li>
+					<li>الصومال تطرح أذون خزانة بقيمة 32 مليار جنيه.. اليوم</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/marquee.js"></script>
+
+
+	<script>
+		$(function () {
+
+
+			let options = {
+				autostart: true,
+				property: 'value',
+				onComplete: null,
+				duration: 5000,
+				padding: 10,
+				marquee_class: '.marquee',
+				container_class: '.simple-marquee-container',
+				sibling_class: 0,
+				hover: true,
+				velocity: 0.05,
+				direction: 'right'
+			}
+
+			$('.simple-marquee-container').SimpleMarquee(options);
+
+		});
+
+	</script>
+</body>
+
+</html>
